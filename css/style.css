@@ -1,0 +1,427 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat',
+        sans-serif;
+    font-style: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    border: 0;
+    margin: 40px 0;
+    background-color: #e5e5e5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* container========= */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* intro=========== */
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/mogo.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__suptitle {
+    margin-bottom: 20px;
+    font-family: 'Kaushan Script',
+    cursive;
+    font-size: 62px;
+    color: #fff;
+}
+
+.intro__title {
+    font-size: 150px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 60px auto;
+    background-color: #fff;
+}
+
+/* header========== */
+
+.header {
+    padding-top: 30px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo a{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}   
+
+/* navigation ===========*/
+
+.nav {
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: color .2s linear;
+}
+
+.nav__link:hover {
+    color: #fce38a;
+}
+
+/* button ========*/
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+    color: #fff;
+    border: 3px solid #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background .1s linear, color .1s linear;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+
+/* slider========= */
+.slider {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider__iteam {
+    padding: 20px 0;
+    width: 24%;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+    color: #fff;
+    opacity: .7;
+    border-top: 2px solid #fff;
+}
+
+.slider__iteam.active {
+    opacity: 1;
+}
+
+.slider__iteam.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+    background-color: #f38181;
+}
+
+.slider__number {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Section========= */
+
+.section {
+    padding: 80px 0;
+}
+
+.section__devices {
+    padding-bottom: 0;
+    background: url("../img/fon.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.section__header {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section__suptitle {
+    font-size: 24px;
+    font-family: 'Kaushan Script',
+    cursive;
+    color: #333333;
+}
+
+.section__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    margin: 30px auto;
+    background-color: #f38181;
+}
+
+.section__text {
+    font-size: 15px;
+    color: #999999;
+}
+
+/* About=========== */
+
+.about {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__iteam {
+    width: 380px;
+    background-color: #95e1d3;
+    position: relative;
+}
+
+.about__iteam:hover .about__img {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+.about__iteam:hover .about__img img {
+    opacity: .1;
+}
+
+.about__iteam:hover .about__text {
+    opacity: 1;
+}
+
+.about__img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+
+    transition: transform .15s linear;
+}
+
+.about__img img {
+    display: block;
+    transition: opacity .1s linear;
+}
+
+.about__text {
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+
+    transition: opacity .2s linear;
+}
+
+
+/* Statistics======== */
+
+.statistics {
+    background-color: #95e1d3;
+}
+
+.stat {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat__iteam {
+    flex: 1 1 0;
+    text-align: center;
+    color: #fff;
+    padding: 70px 25px;
+    
+    border-left: 1px solid #b5eae0;
+}
+
+.stat__iteam:last-child {
+    border-right: 1px solid #b5eae0;
+}
+
+.stat__count {
+    margin-bottom: 10px;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.stat__text {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+/* Services========= */
+
+.services {
+    display: flex;
+}
+
+.services__iteam {
+    flex: 1 1 0;
+    padding-left: 90px;
+    position: relative;
+    padding-left: 85px;
+}
+
+.services__icon {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    z-index: 1;
+}
+
+.services__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 14px;
+}
+
+.services__text {
+    font-size: 15px;
+    color: #999;
+}
+
+/* devices============ */
+
+.devices {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.devices__iteam {
+    display: block; 
+}
+
+.devices__iteam__iphone {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    z-index: 1;
+}
+
+
+/* =========================== */
+
+.Design__info {
+    margin-top: 100px;
+    background: url("../img/images/info_design_02.jpg");
+    background-repeat: no-repeat;
+}
+
+.Info__top {
+    color: #3e3e3e;
+    text-align: center;
+}
+
+.Info__suptitle {
+    font-size: 24px;
+    font-family: 'Kaushan Script',
+    cursive;
+    margin-top: 100px;
+}
+
+.info__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.line {
+    margin-top: 40px;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 0 auto;
+}
+
+.iteam {
+}
+
+.name {
+    font-size: 14px;
+    text-transform: uppercase;
+}
